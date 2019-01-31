@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #d1d1d1;
 }
 
 body {
@@ -11,23 +12,31 @@ body {
     width: 100%;
 }
 
-
 nav {
     background-color: red;
     
 }
 
 nav ol {
-    margin: 0 auto;
-    width: 50%;
-
+    display: block;
+    padding: 15px 5% 30px 5%;
+    background-color: inherit;
 }
 
 nav ol li {
     text-align: center;
     list-style-type: none;
-    display: inline;
-    margin: 5px 10% 8px 10%;
+    
+    width: 33%;
+    float: left;
+    background-color: inherit;
+}
+
+nav ol a {
+    background-color: inherit;
+    color: black;
+    
+    
 }
 
 h1, h2 {
@@ -42,14 +51,15 @@ article
     margin: 5% 2% 3% 2%;
     
 }
+
 article p {
     margin: 5% 10% 8% 10%;
 }
 
-
 header {
      margin: 20px 0 15px 0px;
 }
+
 header p{
     text-align: left;
     
