@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial serif;
+}
+
+#Wrapper {
+    width: 100%;
+    border: 1px solid green;
+}
