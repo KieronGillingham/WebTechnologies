@@ -4,10 +4,53 @@
 }
 
 body {
-    font-family: arial serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-#Wrapper {
+#wrapper {
     width: 100%;
-    border: 1px solid green;
+}
+
+
+nav {
+    background-color: red;
+    
+}
+
+nav ol {
+    margin: 0 auto;
+    width: 50%;
+
+}
+
+nav ol li {
+    text-align: center;
+    list-style-type: none;
+    display: inline;
+    margin: 5px 10% 8px 10%;
+}
+
+h1, h2 {
+   text-align: center; 
+}
+
+article
+{
+    width: 28%;
+    float: left;
+    border: 2px solid red;
+    margin: 5% 2% 3% 2%;
+    
+}
+article p {
+    margin: 5% 10% 8% 10%;
+}
+
+
+header {
+     margin: 20px 0 15px 0px;
+}
+header p{
+    text-align: left;
+    
 }
