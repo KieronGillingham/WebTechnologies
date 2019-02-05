@@ -54,9 +54,29 @@ article {
     
 }
 
+@media only screen and (max-width: 600px) {
+    article {
+        width: 98%;
+    } 
+} 
+
 #mainArticle{
     box-shadow: 0px 15px 5px -7.5px lightgrey, 0px 15px 0px -7.5px white, 0px 15px 15px lightgrey;
-    background-image: linear-gradient(grey,white)
+    background-image: linear-gradient(grey,white);
+
+}
+
+#mainArticle p {
+    line-height: 25px;
+}
+
+#mainImage{
+    width: 100px;
+    float: right;
+}
+
+p{
+    color: grey;
 }
 
 article img{
@@ -68,6 +88,11 @@ article img{
 
 article p {
     margin: 5% 10% 8% 10%;
+    text-align: center;
+}
+
+article br{
+    background-color: red;
 }
 
 header {
