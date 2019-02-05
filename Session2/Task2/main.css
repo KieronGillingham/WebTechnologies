@@ -1,3 +1,7 @@
+:root {
+    --accent:#e44439;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,30 +19,39 @@ body {
     width: 100%;
 }
 
-nav {
-    background-color: red;
-    
+nav 
+
+nav img{
+    float: left;
+    height: 20px;
+    margin: 30px;
 }
 
-nav ol {
-    display: block;
+nav ul {
+    display: inline;
     padding: 15px 5% 30px 5%;
     background-color: inherit;
+
 }
 
-nav ol li {
-    text-align: center;
-    list-style-type: none;
-    
-    width: 33%;
+
+
+nav ul li {
+    text-align: left;
+    list-style: none;
+    margin-right: 20px;
+    width: auto;
     float: left;
     background-color: inherit;
 }
 
-nav ol a {
-    background-color: inherit;
-    color: black;
-    
+nav ul li::after{
+    content: url(Bullet.png);
+    position: relative;
+    top: 50px;
+    left: 30px;
+    margin: 0px;
+    width: 50%;
     
 }
 
@@ -46,17 +59,21 @@ h1, h2 {
    text-align: center; 
 }
 
+h3 {
+    color: var(--accent)
+}
+
 article {
     width: 28%;
     float: left;
     margin: 5% 2% 3% 2%;
-    box-shadow: 0px 15px 15px;
+    box-shadow: 0px 15px 15px darkgray;
     
 }
 
 @media only screen and (max-width: 600px) {
     article {
-        width: 98%;
+        width: 95%;
     } 
 } 
 
@@ -71,7 +88,7 @@ article {
 }
 
 #mainImage{
-    width: 100px;
+    width: 40%;
     float: right;
 }
 
@@ -80,10 +97,12 @@ p{
 }
 
 article img{
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 16px;
-    position: relative;
+    height: 64px;
+    padding: 30px;
+    
 }
 
 article p {
@@ -93,15 +112,6 @@ article p {
 
 article br{
     background-color: red;
-}
-
-header {
-     margin: 20px 0 15px 0px;
-}
-
-header p{
-    text-align: left;
-    
 }
 
 button{
@@ -125,16 +135,17 @@ button{
     border: none;
     background-color: white;
     color: grey;
-    box-shadow: 0px 0px 10px 0px #eeeeee;
+    box-shadow: 0px 0px 30px 0px #eeeeee;
     float: left;
     font-size: 300%;
     text-align: center;
     text-anchor: middle;
+    position: static;
 }
 #forward{
     float: right;
 }
 
 .highlight{
-color: #e44439;
+color: var(--accent);
 }
