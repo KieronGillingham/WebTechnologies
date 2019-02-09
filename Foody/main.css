@@ -57,6 +57,7 @@ nav ul li::after {
     height: 4px;
     content:"";
     background-color: black;
+    border-radius: 2px;
 }
 
 
@@ -197,6 +198,17 @@ hr {
 }
 
 @media only screen and (max-width: 700px) {
+    body{
+        max-width: none;
+    }
+    
+    h1 {
+        text-align: left;
+        width: 90%;
+        line-height: 90px;
+        font-size: 35px;
+    }
+
     nav img {
         display: block;
         clear: both;
@@ -210,26 +222,39 @@ hr {
         text-align: center;
         list-style: none;
         margin-top: 5px;
-        width: 100%;
+        width: 90%;
         float: left;
         clear: right;
         background-color: inherit;
-        font-size: 9px;
+        font-size: 26px;
         color: grey;
+    }
+
+    nav ul li::after {
+        display: block;
+        margin: 5px auto;
+        width: 25px; 
+        height: 12px;
+        content:"";
+        background-color: black;
+        
     }
     
     button {
-        margin: 10px auto;
+        margin: 10px 5px;
+        width: 80%;
+        font-size: 18px; 
+        
     }
 
     #mainArticle{
-        width: 95%;
-        margin: auto;
+        width: 90%;
+        margin: 20px auto;
     }
 
     article {
-        width: 95%;
-        margin: auto;
+        width: 90%;
+        margin: 20px auto;
     }
 
     #mainImage{
