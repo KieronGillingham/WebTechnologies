@@ -13,6 +13,7 @@ body {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
 }
 
 nav{
@@ -50,8 +51,6 @@ nav ul li {
 }
 
 nav ul li::after {
-    background-image: url('Bullet.png');
-    background-size: 20px 5px;
     display: block;
     margin-top: 5px;
     width: 10px; 
@@ -69,7 +68,7 @@ h1 {
    font-family: 'Times New Roman', Times, serif;
 }
 
-h2{
+h2 {
     text-align: center; 
     font-size: 16px;
     width: 50%;
@@ -77,39 +76,59 @@ h2{
 }
 
 h3 {
-    color: var(--accent)
+    color: var(--accent);
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 article {
     width: 28%;
     float: left;
-    margin: 5% 2% 3% 2%;
+    margin: 20px 2%;
     box-shadow: 0px 15px 15px darkgray;
+    clear: right;
     
 }
-
 
 #mainArticle{
     box-shadow: 0px 15px 5px -7.5px lightgrey,
                 0px 15px 0px -7.5px white,
                 0px 15px 15px lightgrey;
     background-image: linear-gradient(lightgrey,white);
-    margin: 5px 5px 5px 5px;
+    margin: 100px 10px 50px 0px;
     text-align: left;
-    width: 44%;
+    width: 35%;
     clear: left;
+    padding: 8% 5%;
 }
 
+#mainArticle h2 {
+    text-align: left;
+    width: 100%;
+}
+
+#mainArticle hr {
+    background-color: var(--accent);
+    border: none;
+    margin: 10px 0px;
+    padding: 2px 2px 2px 2px;
+    width: 20px;
+}
 
 #mainArticle p {
     line-height: 22px;
-
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
     
 }
-
 #mainImage{
-    width: 30%;
+    width: 44%;
     float: left;
+    clear: right;
+    margin: 50px auto;
 }
 
 p{
@@ -131,13 +150,9 @@ article p {
     font-size: 10px;
 }
 
-article br{
-    background-color: red;
-}
-
 button{
     padding: 10px 25px 10px 25px;
-    margin: 10px;
+    margin: 30px 10px;
     border-radius: 25px;
     border: none;
     background-color: #10cc7e;
@@ -203,6 +218,15 @@ hr {
         color: grey;
     }
     
+    button {
+        margin: 10px auto;
+    }
+
+    #mainArticle{
+        width: 95%;
+        margin: auto;
+    }
+
     article {
         width: 95%;
         margin: auto;
