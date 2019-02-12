@@ -21,23 +21,22 @@
 
 }
 
-header {
-    background-color: var(--background);
+header, #blackbar, #page, footer
+{
     display: inline-block;
     padding: 0px 15%;
-    
+}
+
+header {
+    background-color: var(--background);
 }
 
 #blackbar {
     background-color: black;
-    display: inline-block;
-    padding: 0px 15%;
 }
 
 #page {
     background-color: var(--offwhite);
-    display: inline-block;
-    padding: 0px 15%;
 }
 
 nav {
@@ -98,6 +97,12 @@ article {
 
 article p {
     color: var(--darkgrey);
+}
+
+#page article p
+{
+    color: var(--grey);
+    font-size: 10px;
 }
 
 footer {
