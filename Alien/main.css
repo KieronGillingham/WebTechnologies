@@ -22,20 +22,21 @@
 
 header {
     background-color: var(--background);
-    width: 100%;
+    display: inline-block;
     padding: 0 25vw+30px;
-    height: fit-content;
-}
-
-body {
-
-}
-
-div {
     
 }
 
-nav {
+#blackbar {
+    background-color: black;
+    display: inline-block;
+    padding: 0 25vw+30px;
+}
+
+#page {
+    background-color: white;
+    display: inline-block;
+    padding: 0 25vw+30px;
 }
 
 nav ul li {
@@ -83,9 +84,11 @@ p {
 article {
     color: var(--darkgrey);
     background-color: black;
-    display: inline-block;
-    width: 50%;
+    width: calc(50% - 60px);
     text-align: center;
+    float: left;
+    padding: 30px;
+    display: block;
 }
 
 article p {
