@@ -1,0 +1,19 @@
+#travelsurvey{
+    width: 400px;
+}
+
+input[type="text"] {
+    float:right;    
+}
+
+input[type="submit"] {
+    width: 400px;
+}
+
+input[type="text"]:invalid {
+    border: inset red 2px;
+}
+
+label + input[type="text"]{
+    border: inset green 5px;
+}
