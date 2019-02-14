@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://www.google.com" method="post">
+        <p><label for=name>Name:</label><input type="text" name="name" required></p>
+        <p><label for=email>Email:</label><input type="email" name="email" required></p>
+        <p><label for=number>Number:</label><input type="text" name="number" required></p>
+        <p>
+            <label for=year>What year are you in:</label>
+            <select name="year" required>
+                <option value="first">First Year</option>
+                <option value="second">Second Year</option>
+                <option value="gap">Gap Year</option>
+                <option value="final">Final Year</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+        <p>
+            <label for=electronic_devices>Which electronic devices do you use?</label><br>
+            <input type="checkbox" name="electronic_devices">Computer<br>
+            <input type="checkbox" name="electronic_devices">Ebook reader<br>
+            <input type="checkbox" name="electronic_devices">Smart phone<br>
+        </p>
+        <p>
+            <label for=hours>How many hours a day do you spend using electronic devices?</label><br>
+            <input type="radio" name="hours">1 Hour<br>
+            <input type="radio" name="hours">2 Hours<br>
+            <input type="radio" name="hours">3 Hours+<br>
+        </p>
+        <p><label for=comments>Any other comments</label></p>
+        <p><textarea name="message" rows="5" cols"80"></textarea></p>
+        <p><input type="submit" name="Submit" value:"Submit"></p>
+    </form>
+</body>
+</html>
