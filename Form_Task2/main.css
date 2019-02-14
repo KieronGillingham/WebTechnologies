@@ -1,5 +1,17 @@
+* {
+    font-family: sans-serif;
+}
+
 #travelsurvey{
     width: 400px;
+}
+
+legend {
+    text-align: center;
+}
+
+fieldset {
+    margin: 20px;
 }
 
 input[type="text"] {
@@ -8,6 +20,9 @@ input[type="text"] {
 
 input[type="submit"] {
     width: 400px;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
 }
 
 input[type="text"]:invalid {
