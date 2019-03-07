@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1 id="title">I Have No Name</h1>
+    <p id="subtitle">I was never born and am nowhere.</p>
+    <fieldset>
+        <input id="value1" type="number" name="value1" step="any" placeholder="Enter a number here.">
+        <input id="value2" type="number" name="value2" step="any" placeholder="Enter a number here.">
+        <input id="value3" type="number" name="value3" step="any" placeholder="Enter a number here.">
+        <button onClick="calcSum()" text="Sum"></button>
+        <button onClick="calcProd()" text="Product"></button>
+        <button onClick="calcPower()" text="Power"></button>
+        <label id="output"></label>
+    </fieldset>
+</body>
+
+<script type="text/javascript">
+    var name;
+    var age;
+    var yourLocation;
+    
+    name = "Kieron";
+    age = 25;
+    yourLocation = "Southampton";
+    
+    document.getElementById("title").innerHTML = "My name is " + name;
+    document.getElementById("subtitle").innerHTML = "I am " + age + " years old and am in " + yourLocation + ".";
+    
+    /*var myWindow = window.open("", "MsgWindow", "width=200, height=100");
+    myWindow.document.write("<p>Hello World!</p>"); */
+    
+    var output = document.getElementById("output");
+    
+    
+    function calcSum()
+    {
+        var value1 = parseInt(document.getElementById("value1").value);
+        var value2 = parseInt(document.getElementById("value2").value);
+        var value3 = parseInt(document.getElementById("value3").value);
+        
+        if(isNaN(value1)) {value1 = 0;}
+        if(isNaN(value2)) {value2 = 0;}
+        if(isNaN(value3)) {value3 = 0;}
+        
+        output.innerHTML = value1 + value2 + value3;
+    }
+    
+    function calcProd()
+    {
+        var value1 = parseInt(document.getElementById("value1").value);
+        var value2 = parseInt(document.getElementById("value2").value);
+        var value3 = parseInt(document.getElementById("value3").value);
+        
+        if(isNaN(value1)) {value1 = 0;}
+        if(isNaN(value2)) {value2 = 0;}
+        if(isNaN(value3)) {value3 = 0;}
+        
+        output.innerHTML = value1 * value2 * value3;
+    }
+    
+    function calcPower()
+    {
+        var value1 = parseInt(document.getElementById("value1").value);
+        var value2 = parseInt(document.getElementById("value2").value);
+        var value3 = parseInt(document.getElementById("value3").value);
+        
+        if(isNaN(value1)) {value1 = 0;}
+        if(isNaN(value2)) {value2 = 0;}
+        if(isNaN(value3)) {value3 = 0;}
+        
+        output.innerHTML = Math.pow(value1,value2);
+        document.getElementById("value3").value = NaN;
+    }
+    
+</script>
+
+</html>
