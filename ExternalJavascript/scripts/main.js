@@ -7,42 +7,43 @@ var button_guess;
 var button_reset;
 var user_guess;
 var output;
-var test;
 
 
 
 function main()
 {
-    console.log("Loaded");
+    console.log("Main called from " + this);
 
     button_guess = document.getElementById("checkButton");
     button_reset = document.getElementById("resetButton");
     user_guess =   document.getElementById("userGuess");
     output =       document.getElementById("output");
-    test =         document.getElementById("test");
     
     console.log(button_guess);
     console.log(button_reset);
     console.log(user_guess);
     console.log(output);
-    console.log(test);
     
-    button_reset.onclick = reset();
-    button_guess.onclick = guess(parseInt(user_guess.value));
+
+    button_reset.onclick = reset;
+    button_guess.onclick = guess;
     
     reset();
 }
 
 function generateNumber()
 {
-    random_number = Math.round(Math.random() * 100);
-    test.innerHTML = random_number;
+    console.log("Generate new Number");
+    random_number = Math.round(Math.random() * 99) + 1;
 }
 
-function guess(userGuess)
+function guess()
 {
+    console.log("Process guess");
     countGuess();
     
+    var userGuess = user_guess.value;
+
     if (userGuess > random_number)
     {
         output.innerHTML = "Too high.";
@@ -66,6 +67,7 @@ function guess(userGuess)
 
 function reset()
 {
+    console.log("Reset");
     generateNumber();
     number_of_guesses = 0;
 }
