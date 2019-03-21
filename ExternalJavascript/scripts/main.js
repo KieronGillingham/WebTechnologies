@@ -1,5 +1,3 @@
-window.onload = main();
-
 var random_number;
 var number_of_guesses;
 
@@ -8,9 +6,7 @@ var button_reset;
 var user_guess;
 var output;
 
-
-
-function main()
+window.onload = function main()
 {
     console.log("Main called from " + this);
 
@@ -19,12 +15,12 @@ function main()
     user_guess =   document.getElementById("userGuess");
     output =       document.getElementById("output");
     
+    
     console.log(button_guess);
     console.log(button_reset);
     console.log(user_guess);
     console.log(output);
     
-
     button_reset.onclick = reset;
     button_guess.onclick = guess;
     
