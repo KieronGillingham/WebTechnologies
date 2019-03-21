@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/jscript" src="scripts/form_validation.js"></script>
+    <title>Form Validation Test</title>
+</head>
+<body>
+    <form id="main_form">
+        <p><label>Name:</label><input id="name" type="text" name="name" Required/></p>
+        <p class="required_msg" id="name_req" style="display:none">Required</p>
+        
+        <p><label>Age:</label><input id="age" type="text" name="age" Required/></p>
+        <p class="required_msg" id="age_req" style="display:none">Required</p>
+
+        <p><label>Location:</label><input id="location"type="text" name="location" Required/></p>
+        <p class="required_msg" id="location_req" style="display:none">Required</p>
+
+        <p><label>Email:</label><input id="email" type="text" name="email" Required/></p>
+        <p class="required_msg" id="email_req" style="display:none">Required</p>
+
+        <p><label>Phone Number:</label><input id="phone_number" type="text" name="phone_number" Required/></p>
+        <p class="required_msg" id="phone_req" style="display:none">Required</p>
+
+        <p><label>Address:</label><input id="address_line_1" type="text" name="address_line_1" Required/></p>
+        <p class="required_msg" id="address_req" style="display:none">Required</p>
+
+        <p><label>Post Code:</label><input id="post_code" type="text" name="post_code" Required/></p>
+        <p class="required_msg" id="post_code_req" style="display:none">Required</p>
+        
+        <p><input type="submit" id="submit_button" value="Submit"/></p>
+    </form>
+    <!-- main_form -->
+</body>
+</html>
