@@ -16,14 +16,19 @@ function main()
 function formChanged(event)
 {
     console.log(event);
-    
-
+  
     var products = document.getElementsByName("product");
 
     subTotal = 0;
+    
     products.forEach(calcSubtotal);
 
-    document.getElementById("sub-total").innerHTML = "£" + subTotal + ".00";
+    calcTotals();
+
+    document.getElementById("sub-total").innerHTML = "£" + subTotal;
+    document.getElementById("shipping").innerHTML = "£" + shipping;
+    document.getElementById("taxes").innerHTML = "£" + taxes;
+    document.getElementById("total").innerHTML = "£" + total;
 }
 
 function calcSubtotal(product)
@@ -35,4 +40,22 @@ function calcSubtotal(product)
   {
     subTotal += parseInt(product.dataset.price) * parseInt(qty.value);
   }
+}
+
+function calcTotals()
+{
+  taxes = subTotal * 0.2;
+  var netTotal = subTotal + taxes;
+
+  if (netTotal >= 100)
+  {
+    shipping = 0;
+  }
+  else
+  {
+    shipping = 10;
+  }
+
+  total = netTotal + shipping;
+
 }
